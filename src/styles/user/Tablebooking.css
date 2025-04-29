@@ -1,0 +1,30 @@
+/* User Table Booking Page */
+
+/* Heading styling */
+h2 {
+  font-size: 24px;  /* Sets a large font size for clear and readable headings */
+  color: #102e50;  /* Dark color for the text to stand out against light backgrounds */
+}
+
+/* Button styling for interactivity */
+button {
+  background-color: #102e50;  /* Dark background color for the button, complementing the overall theme */
+  color: white;  /* White text on the button for contrast and readability */
+  padding: 10px 20px;  /* Comfortable padding for ease of clicking */
+  border: none;  /* Removes default border for a clean look */
+  border-radius: 5px;  /* Rounded corners for a modern button design */
+  cursor: pointer;  /* Pointer cursor to indicate that the button is clickable */
+}
+
+/* Hover effect for buttons to improve user interaction */
+button:hover {
+  background-color: #0e2441;  /* Slightly darker shade for the button when hovered */
+}
+
+/* Div container for form or content sections */
+div {
+  background-color: #f4f8d3;  /* Light background color for the container */
+  padding: 15px;  /* Padding to ensure elements within the div have space around them */
+  margin-bottom: 15px;  /* Space between this and other elements for better visual structure */
+  border-radius: 8px;  /* Rounded corners for a soft, modern look */
+}

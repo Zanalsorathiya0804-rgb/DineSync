@@ -1,0 +1,213 @@
+/* Global styling for the menu control page */
+.menu-control-page {
+  padding: 40px;
+  background: #f4f8d3; /* Light background color for the page */
+  color: #102e50; /* Dark text color */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  font-family: 'Roboto', sans-serif; /* Font for the page */
+}
+
+/* Styling for form sections */
+.form-section {
+  background: #102e50; /* Dark background color for the form */
+  padding: 30px;
+  border-radius: 15px; /* Rounded corners for the form */
+  color: #f4f8d3; /* Light text color */
+  margin-bottom: 40px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for form sections */
+.form-section:hover {
+  transform: translateY(-10px); /* Lift the form slightly */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Styling for input fields within the form */
+.form-section input {
+  width: 100%; /* Full width input */
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px; /* Rounded corners for inputs */
+  border: 1px solid #102e50; /* Border color matching primary color */
+  background: #f4f8d3; /* Light background for input */
+  color: #102e50; /* Dark text color */
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* Smooth border transition on focus */
+}
+
+/* Focus styling for input fields */
+.form-section input:focus {
+  border-color: #102e50; /* Focused border color */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Styling for buttons within the form */
+.form-section button {
+  margin-top: 10px;
+  background-color: #102e50; /* Button background color */
+  color: #f4f8d3; /* Button text color */
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px; /* Rounded corners for button */
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for form buttons */
+.form-section button:hover {
+  background-color: #f4f8d3; /* Light background on hover */
+  color: #102e50; /* Dark text color on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Styling for restaurant update section */
+.update-section {
+  margin-top: 30px;
+}
+
+/* Styling for the restaurant update container */
+.restaurant-update {
+  background: #102e50; /* Dark background for update section */
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners for the update section */
+  color: #f4f8d3; /* Light text color */
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for individual dish items */
+.dish-item {
+  display: flex; /* Flexbox for easy alignment */
+  justify-content: space-between; /* Space between name and button */
+  align-items: center;
+  background: #f4f8d3; /* Light background for dish items */
+  color: #102e50; /* Dark text color */
+  padding: 12px 20px;
+  border-radius: 10px; /* Rounded corners */
+  margin: 12px 0;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Hover effect */
+}
+
+/* Hover effect for dish items */
+.dish-item:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  background-color: #102e50; /* Dark background on hover */
+  color: #f4f8d3; /* Light text color on hover */
+}
+
+/* Styling for buttons inside dish items */
+.dish-item button {
+  background: #102e50; /* Button background color */
+  color: #f4f8d3; /* Button text color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for dish item buttons */
+.dish-item button:hover {
+  background: #f4f8d3; /* Light background on hover */
+  color: #102e50; /* Dark text color on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Layout button at the bottom of the page */
+.layout-btn {
+  margin-top: 30px;
+  background-color: #102e50; /* Dark background for button */
+  color: #f4f8d3; /* Light text color */
+  border: none;
+  padding: 14px 25px;
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Spacing between letters */
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for layout button */
+.layout-btn:hover {
+  background-color: #f4f8d3; /* Light background on hover */
+  color: #102e50; /* Dark text color on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Design for screens smaller than 768px */
+@media (max-width: 768px) {
+  .menu-control-page {
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+
+  .form-section {
+    padding: 20px; /* Reduced padding on form */
+  }
+
+  .form-section input {
+    padding: 10px 12px; /* Reduced padding for input fields */
+  }
+
+  .form-section button {
+    font-size: 1.1rem; /* Slightly smaller button font */
+  }
+
+  .restaurant-update {
+    padding: 15px; /* Reduced padding for the update section */
+  }
+
+  .dish-item {
+    padding: 10px 15px; /* Reduced padding for dish items */
+  }
+
+  .dish-item button {
+    font-size: 1rem; /* Slightly smaller button font */
+  }
+
+  .layout-btn {
+    font-size: 1.1rem; /* Slightly smaller layout button font */
+  }
+}
+
+/* Responsive Design for screens smaller than 480px */
+@media (max-width: 480px) {
+  .menu-control-page {
+    padding: 15px; /* Further reduced padding */
+  }
+
+  .form-section {
+    padding: 15px; /* Reduced padding for the form */
+  }
+
+  .form-section input {
+    font-size: 0.9rem; /* Smaller font size for inputs */
+  }
+
+  .form-section button {
+    font-size: 1rem; /* Smaller font size for button */
+  }
+
+  .restaurant-update {
+    padding: 12px; /* Further reduced padding for update section */
+  }
+
+  .dish-item {
+    padding: 8px 12px; /* Reduced padding for dish items */
+  }
+
+  .dish-item button {
+    font-size: 0.9rem; /* Smaller button font size */
+  }
+
+  .layout-btn {
+    font-size: 1rem; /* Smaller font size for layout button */
+  }
+}

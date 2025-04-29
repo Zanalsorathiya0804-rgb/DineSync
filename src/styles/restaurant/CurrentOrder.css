@@ -1,0 +1,79 @@
+/* Root Variables for easy color management */
+:root {
+  --primary: #102e50;  /* Dark primary color */
+  --bg: #f4f8d3;  /* Light background color */
+}
+
+/* Styling for the current order container */
+.current-order-container {
+  padding: 2rem;
+  background: var(--bg);  /* Light background */
+  color: var(--primary);  /* Dark text color */
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;  /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(16, 46, 80, 0.1);  /* Soft shadow for depth */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling for the title of the current order section */
+.current-order-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Styling for individual order containers */
+.order {
+  background: #fff;  /* White background for individual orders */
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;  /* Smooth rounded corners */
+  box-shadow: 0 2px 5px rgba(16, 46, 80, 0.2);  /* Subtle shadow for depth */
+}
+
+/* Title styling inside each order */
+.order h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for paragraph elements within each order */
+.order p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: rgba(16, 46, 80, 0.8);  /* Lighter primary color for paragraphs */
+}
+
+/* Styling for the list of ordered dishes */
+.order div {
+  margin-top: 1rem;
+}
+
+/* Ordered dishes list */
+.order div h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary);  /* Primary color for headings */
+}
+
+.order div p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: rgba(16, 46, 80, 0.7);  /* Slightly lighter color for dish names */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .current-order-container {
+    padding: 1rem;
+  }
+  
+  .order {
+    padding: 1rem;
+  }
+}

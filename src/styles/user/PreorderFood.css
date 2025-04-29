@@ -1,0 +1,46 @@
+/* PreorderFood.css */
+
+/* Container for the preorder food form */
+.preorder-food-container {
+  padding: 20px;
+  background-color: #f4f8d3;  /* Light background color for a clean, modern look */
+  border-radius: 8px;  /* Rounded corners for a smoother design */
+  width: 400px;  /* Fixed width for form layout */
+  margin: 0 auto;  /* Centers the form on the page */
+}
+
+/* Input fields for the preorder form */
+.preorder-food-container input {
+  width: 100%;
+  padding: 10px;  /* Comfortable padding for ease of use */
+  margin: 10px 0;  /* Spacing between input fields */
+  border: 1px solid #ccc;  /* Light border for input fields */
+  border-radius: 4px;  /* Rounded corners for input fields */
+}
+
+/* Layout for two input fields in a row */
+.dish-input {
+  display: flex;
+  justify-content: space-between;  /* Distributes input fields with space in between */
+}
+
+/* Individual input fields within the dish-input */
+.dish-input input {
+  width: 48%;  /* Each input takes up half of the container width */
+}
+
+/* Submit button styling */
+button {
+  background-color: #102e50;  /* Dark button color to complement the light background */
+  color: white;  /* White text for readability */
+  padding: 10px;
+  border-radius: 5px;  /* Rounded button corners */
+  cursor: pointer;  /* Pointer cursor to indicate interactivity */
+  width: 100%;  /* Button takes full width of the form */
+  margin-top: 10px;  /* Space between the button and input fields */
+}
+
+/* Button hover effect for better user interaction */
+button:hover {
+  background-color: #0e2540;  /* Darker shade for the button on hover */
+}

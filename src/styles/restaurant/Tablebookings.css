@@ -1,0 +1,85 @@
+/* General Styles */
+* {
+  margin: 0; /* Reset margin for all elements */
+  padding: 0; /* Reset padding for all elements */
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width/height */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Set font family for the body */
+  background-color: #f4f8d3; /* Background color for the page */
+}
+
+h2 {
+  color: #102e50; /* Text color for headings */
+  font-size: 24px; /* Font size for headings */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Table Booking Container */
+.tablebooking-container {
+  background-color: #f4f8d3; /* Background color for the booking container */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 80%; /* Container width */
+  max-width: 600px; /* Max width of the container */
+  margin: 20px auto; /* Center the container horizontally with margin */
+}
+
+.input-field {
+  margin: 10px 0; /* Margin between input fields */
+  padding: 8px; /* Padding inside the input fields */
+  width: 100%; /* Input fields take full width */
+  border-radius: 5px; /* Rounded corners for input fields */
+  border: 1px solid #ccc; /* Border color for input fields */
+  font-size: 16px; /* Font size inside input fields */
+}
+
+.table-details {
+  margin-bottom: 15px; /* Bottom margin for table details section */
+}
+
+/* Button Styles */
+button {
+  background-color: #102e50; /* Default button background color */
+  color: white; /* Text color of the button */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* No border for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button text */
+  margin-top: 10px; /* Top margin for buttons */
+}
+
+button:hover {
+  background-color: #0e2441; /* Darker background color on button hover */
+}
+
+.add-table-btn {
+  background-color: #0e2441; /* Custom background color for the add table button */
+  margin-top: 15px; /* Top margin for the add table button */
+}
+
+.add-table-btn:hover {
+  background-color: #102e50; /* Hover effect for the add table button */
+}
+
+.submit-btn {
+  background-color: #102e50; /* Submit button default background color */
+}
+
+.submit-btn:hover {
+  background-color: #0e2441; /* Submit button hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .tablebooking-container {
+      width: 95%; /* Adjust container width for small screens */
+      padding: 15px; /* Reduced padding for smaller screens */
+  }
+  h2 {
+      font-size: 20px; /* Adjust heading size for smaller screens */
+  }
+}

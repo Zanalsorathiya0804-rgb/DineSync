@@ -1,0 +1,160 @@
+/* Home Dashboard Container */
+.home-dashboard-scrollable {
+  background-color: #f4f8d3; /* Background color that represents a soft and modern feel */
+  padding: 20px;
+  min-height: 100vh; /* Ensures the page takes full height of the screen */
+  display: flex;
+  justify-content: center; /* Centers the dashboard */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Dashboard Area */
+.home-dashboard {
+  max-width: 1200px; /* Ensures the dashboard doesn't stretch too wide */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: none; /* Clean look without unnecessary shadows */
+  background-color: #f4f8d3; /* Keeps the background consistent with the container */
+  border-radius: 8px; /* Rounded corners for a modern, clean design */
+}
+
+/* Header */
+.home-dashboard h1 {
+  font-size: 2.5rem; /* Larger font for better visibility and focus */
+  color: #102e50; /* Dark color for a professional and bold feel */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Error message */
+.error {
+  color: red; /* Standard color for errors to attract attention */
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  gap: 15px; /* Spacing between filters for clarity */
+  margin-bottom: 30px;
+}
+
+.filters select {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border for input elements */
+  border-radius: 4px; /* Rounded edges for smoother design */
+  width: 200px; /* Sufficient width for dropdowns */
+  background-color: #f9f9f9; /* Soft background to differentiate from the main background */
+  color: #333; /* Dark text for readability */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.filters select:focus {
+  border-color: #102e50; /* Button color for focused dropdown */
+  outline: none; /* Removes default browser outline for a cleaner look */
+}
+
+/* Restaurant List Grid */
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Gap between restaurant cards */
+  margin-bottom: 20px;
+}
+
+.restaurant-card {
+  background-color: #fff; /* White background for each restaurant card */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for each card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for emphasis */
+}
+
+.restaurant-card h2 {
+  font-size: 1.5rem; /* Larger font for restaurant names */
+  color: #102e50; /* Consistent color for headings */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.restaurant-card .address {
+  font-size: 1rem;
+  color: #555; /* Lighter text color for address */
+}
+
+.restaurant-card p {
+  font-size: 1rem;
+  color: #777; /* Subtle color for additional information */
+}
+
+.restaurant-card .type {
+  font-weight: bold; /* Emphasizes the restaurant type */
+  color: #102e50; /* Consistent color for key information */
+}
+
+/* No Results Message */
+.no-results {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Live Menu Section */
+.live-menu-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.live-menu-section h2 {
+  font-size: 1.8rem;
+  color: #102e50; /* Maintains consistency with the overall color scheme */
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.live-menu-btn {
+  background-color: #102e50; /* Dark blue button to match the theme */
+  color: #fff; /* White text on dark background for better contrast */
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.live-menu-btn:hover {
+  background-color: #0a1f38; /* Darker shade for hover effect */
+}
+
+.live-menu-btn:focus {
+  outline: none;
+  background-color: #0a1f38; /* Same as hover for focus state consistency */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .home-dashboard {
+    padding: 15px; /* Reduced padding on smaller screens */
+  }
+
+  .filters {
+    flex-direction: column; /* Stack filters vertically on smaller screens */
+    gap: 10px; /* Reduced gap between filters */
+  }
+
+  .restaurant-list {
+    grid-template-columns: 1fr; /* Single column for restaurant list on small screens */
+  }
+}

@@ -1,0 +1,168 @@
+/* Global Reset */
+* {
+  margin: 0; /* Reset margin for all elements */
+  padding: 0; /* Reset padding for all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+html, body {
+  height: 100%; /* Ensure html and body take full height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Set font family for the body */
+  background: #f4f8d3; /* Background color for the page */
+  color: #102e50; /* Text color for the page */
+}
+
+/* Landing Page */
+.landing-page {
+  height: 100vh; /* Full viewport height */
+  background: #f4f8d3; /* Background color for landing page */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text inside the landing page */
+  color: #102e50; /* Text color */
+}
+
+.landing-page h1 {
+  font-size: 4rem; /* Heading font size */
+  margin-bottom: 15px; /* Space below the heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.landing-page p {
+  font-size: 1.6rem; /* Paragraph font size */
+  margin-bottom: 25px; /* Space below the paragraph */
+}
+
+.buttons-container .btn {
+  padding: 15px 35px; /* Padding inside the buttons */
+  margin: 10px; /* Margin between buttons */
+  font-size: 1.3rem; /* Font size for button text */
+  border: none; /* Remove border from buttons */
+  border-radius: 25px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: 600; /* Button text weight */
+  background-color: #102e50; /* Button background color */
+  color: #f4f8d3; /* Button text color */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.buttons-container .btn:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Dashboard Section */
+.dashboard {
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f8d3; /* Background color */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  padding: 20px; /* Padding inside the dashboard */
+}
+
+/* Headers */
+.header {
+  background-color: #102e50; /* Header background color */
+  color: #f4f8d3; /* Header text color */
+  text-align: center; /* Center text inside header */
+  padding: 30px 0; /* Padding inside the header */
+  font-size: 3.5rem; /* Font size for header text */
+  font-weight: bold; /* Make the header text bold */
+  flex-shrink: 0; /* Prevent header from shrinking */
+  border-radius: 12px; /* Rounded corners for the header */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+}
+
+/* Icon Grid */
+.icon-grid {
+  flex: 1; /* Allow grid to take available space */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr);  /* 2 icons per row */
+  gap: 30px; /* Space between items */
+  padding: 40px; /* Padding inside the grid */
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Icon Card */
+.icon-card {
+  background: #f4f8d3; /* Background color for each icon card */
+  padding: 30px 25px; /* Padding inside the icon card */
+  border-radius: 20px; /* Rounded corners for icon cards */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-decoration: none; /* Remove underline from links */
+  color: #102e50; /* Text color */
+  text-align: center; /* Center the text inside the card */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  min-height: 180px; /* Ensure minimum height for icon cards */
+}
+
+.icon-card h4 {
+  margin-top: 15px; /* Space above the heading */
+  font-size: 1.2rem; /* Font size for the icon card heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.icon-card svg {
+  color: #102e50; /* Color of the SVG icons */
+}
+
+.icon-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Layout for small screens */
+@media (max-width: 768px) {
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr);  /* Keep it 2 icons per row for small screens */
+    grid-template-rows: repeat(2, 1fr);    /* Ensure only 2 rows for small screens */
+  }
+  .landing-page h1 {
+    font-size: 2.5rem; /* Adjust font size for heading on small screens */
+  }
+  .landing-page p {
+    font-size: 1.3rem; /* Adjust font size for paragraph on small screens */
+  }
+  .buttons-container .btn {
+    font-size: 1.1rem; /* Adjust button font size for small screens */
+  }
+}
+
+/* Forms & Inputs */
+form {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack form elements vertically */
+  width: 100%; /* Full width */
+  max-width: 400px; /* Max width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Padding inside the form */
+  background-color: #f4f8d3; /* Background color for the form */
+  border-radius: 12px; /* Rounded corners for the form */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input,
+button {
+  font-family: 'Poppins', sans-serif; /* Set font for inputs and buttons */
+  font-size: 1rem; /* Font size for inputs and buttons */
+  padding: 10px 20px; /* Padding inside the inputs and buttons */
+  border-radius: 8px; /* Rounded corners for inputs and buttons */
+  border: 1px solid #102e50; /* Border color for inputs and buttons */
+  margin-bottom: 15px; /* Space below inputs and buttons */
+  background: #f4f8d3; /* Background color for inputs and buttons */
+  color: #102e50; /* Text color for inputs and buttons */
+  width: 100%; /* Full width */
+}
+
+input:focus,
+button:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #102e50; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(16, 46, 80, 0.3); /* Add shadow on focus */
+}

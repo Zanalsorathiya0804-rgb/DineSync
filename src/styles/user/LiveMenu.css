@@ -1,0 +1,129 @@
+/* src/pages/user/LiveMenu.css */
+
+/* Main container for the live menu page */
+.live-menu-page {
+  padding: 40px;
+  background: #f4f8d3; /* Light background color for a clean and modern look */
+  color: #102e50; /* Dark text color for readability */
+  height: 100vh;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif; /* Smooth, modern font choice */
+}
+
+/* List of menus for restaurants */
+.menu-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between each menu item */
+}
+
+/* Individual restaurant menu card */
+.restaurant-menu {
+  background: #102e50; /* Dark background for contrast with the content */
+  color: #f4f8d3; /* Light text color for better visibility */
+  padding: 30px;
+  border-radius: 20px; /* Rounded corners for a modern look */
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow to create depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the restaurant menu */
+.restaurant-menu:hover {
+  transform: translateY(-10px); /* Slightly lift the menu card on hover */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for emphasis */
+}
+
+/* Heading inside the restaurant menu */
+.restaurant-menu h2 {
+  font-size: 2rem; /* Larger heading for better focus */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f4f8d3; /* Heading color consistent with text */
+}
+
+/* Menu list items */
+.restaurant-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+/* Styling for individual menu items */
+.restaurant-menu li {
+  background: #f4f8d3; /* Light background to distinguish menu items */
+  color: #102e50; /* Dark text for readability */
+  padding: 12px 20px;
+  border-radius: 10px; /* Rounded corners for each menu item */
+  margin-bottom: 15px;
+  transition: background 0.3s ease; /* Smooth transition for background on hover */
+}
+
+/* Hover effect for each menu item */
+.restaurant-menu li:hover {
+  background: #102e50; /* Dark background for hovered item */
+  color: #f4f8d3; /* Light text on hover for contrast */
+  transform: scale(1.05); /* Slightly enlarge the menu item on hover */
+}
+
+/* Button to book or order */
+.book-btn {
+  margin-top: 20px;
+  background-color: #102e50; /* Dark button color to match the theme */
+  color: #f4f8d3; /* Button text color */
+  border: none;
+  padding: 14px 25px;
+  border-radius: 10px; /* Rounded corners for the button */
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Button hover effect */
+.book-btn:hover {
+  background-color: #f4f8d3; /* Button background color on hover */
+  color: #102e50; /* Button text color on hover */
+  transform: translateY(-5px); /* Slight lift effect for the button */
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .live-menu-page {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .restaurant-menu h2 {
+    font-size: 1.8rem; /* Slightly smaller font for the heading */
+  }
+
+  .restaurant-menu ul li {
+    padding: 10px 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .book-btn {
+    font-size: 1.1rem; /* Slightly smaller button text */
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .restaurant-menu {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .restaurant-menu h2 {
+    font-size: 1.6rem; /* Further reduce the heading size for mobile */
+  }
+
+  .restaurant-menu ul li {
+    font-size: 0.9rem; /* Smaller text for menu items */
+  }
+
+  .book-btn {
+    font-size: 1rem; /* Adjust button font size for mobile */
+  }
+}

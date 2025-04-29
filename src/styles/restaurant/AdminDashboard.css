@@ -1,0 +1,106 @@
+/* Root CSS variables for consistent color usage */
+:root {
+  --primary: #102e50;  /* Primary color for the app - dark, clean, and professional */
+  --bg: #f4f8d3;  /* Background color for a fresh, light feel */
+}
+
+/* Admin Dashboard container styling */
+.admin-dashboard {
+  padding: 2rem;  /* Adds spacing around the content */
+  background: var(--bg);  /* Sets background color using the defined CSS variable */
+  min-height: 100vh;  /* Ensures the dashboard takes up the full viewport height */
+  color: var(--primary);  /* Text color is set to the primary color for contrast */
+  font-family: 'Poppins', sans-serif;  /* Clean, modern font for better readability */
+}
+
+/* Heading styling */
+.admin-dashboard h1 {
+  margin-bottom: 1rem;  /* Adds spacing below the heading for a clean separation */
+}
+
+/* Error message styling */
+.error {
+  color: red;  /* Sets error messages in red for visibility */
+  text-align: center;  /* Centers the error message */
+  margin-bottom: 1rem;  /* Adds space below the error message */
+}
+
+/* Form container for admin actions */
+.admin-form {
+  display: flex;
+  flex-direction: column;  /* Stacks the form elements vertically */
+  gap: 1rem;  /* Adds space between form elements */
+  margin-bottom: 1.5rem;  /* Adds space below the form */
+}
+
+/* Styling for form inputs and buttons */
+.admin-form input,
+.admin-form button {
+  padding: 0.75rem;  /* Padding for better clickability */
+  border: 2px solid var(--primary);  /* Border color matches the primary color */
+  border-radius: 5px;  /* Rounded corners for a modern look */
+  background: var(--bg);  /* Background color to maintain consistency */
+  color: var(--primary);  /* Text color set to primary for consistency */
+  font-size: 1rem;  /* Standard font size for form elements */
+}
+
+/* Focus states for inputs and buttons */
+.admin-form input:focus,
+.admin-form button:focus {
+  outline: none;  /* Removes default outline */
+  box-shadow: 0 0 8px rgba(16,46,80,0.4);  /* Adds a focus effect for better user interaction */
+}
+
+/* Button hover effect */
+.admin-form button {
+  cursor: pointer;  /* Pointer cursor to indicate button interactivity */
+  transition: all 0.3s;  /* Smooth transition for hover effects */
+}
+
+.admin-form button:hover {
+  background: var(--primary);  /* Changes button background color on hover */
+  color: var(--bg);  /* Changes button text color on hover */
+}
+
+/* Button for navigating to the live menu */
+.live-menu-btn {
+  display: block;
+  margin: 0 auto 2rem;  /* Centers the button with bottom margin */
+  padding: 0.75rem 2rem;  /* Adds padding for a larger clickable area */
+  border: 2px solid var(--primary);  /* Border color matches primary color */
+  background: var(--bg);  /* Consistent background color */
+  color: var(--primary);  /* Button text color matches primary color */
+  border-radius: 5px;  /* Rounded corners for a modern appearance */
+  font-size: 1rem;  /* Font size for the button */
+  cursor: pointer;  /* Pointer cursor to indicate interactivity */
+  transition: all 0.3s;  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the live menu button */
+.live-menu-btn:hover {
+  background: var(--primary);  /* Changes the background color on hover */
+  color: var(--bg);  /* Changes the text color on hover */
+}
+
+/* Styling for restaurant list */
+.restaurant-list {
+  list-style: none;  /* Removes default list styling */
+  padding: 0;  /* Removes default padding */
+}
+
+/* Styling for each restaurant item in the list */
+.restaurant-list li {
+  background: #fff;  /* White background for each item for contrast */
+  padding: 1rem;  /* Padding inside each item */
+  border-radius: 8px;  /* Rounded corners for each item */
+  margin-bottom: 1rem;  /* Adds space between each item */
+  box-shadow: 0 4px 8px rgba(16,46,80,0.1);  /* Subtle shadow to create a lifted effect */
+}
+
+/* Address styling within each restaurant item */
+.restaurant-list li .address {
+  display: block;  /* Ensures address is displayed as a block element */
+  font-size: 0.9rem;  /* Smaller font size for address */
+  color: rgba(16,46,80,0.7);  /* Lightened primary color for address */
+  margin: 0.5rem 0;  /* Adds vertical margin for spacing */
+}
