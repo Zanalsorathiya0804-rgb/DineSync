@@ -1,11 +1,12 @@
-DineSync: Real-Time Restaurant Management System
+## DineSync: Real-Time Restaurant Management System
+
 DineSync is an innovative real-time restaurant management system designed for restaurants and their customers. This web application provides an easy-to-use platform for both restaurant staff and customers, built using React, JavaScript, and CSS.
 
 Restaurant Staff: Can easily manage restaurant details, live menus, available tables, and pre-order food for customers.
 
 Customers: Can view restaurant details, browse the live menu, book tables in real-time, and even pre-order food to minimize wait times.
 
-Problem Statement
+## Problem Statement
 Running a restaurant efficiently requires managing multiple aspects such as live menu updates, table availability, and customer orders. This often results in:
 
 Unpredictable wait times: Customers often have to wait long before they can get a table or their food.
@@ -16,7 +17,7 @@ Overcrowding or inefficient table management: Uncoordinated table bookings lead 
 
 Pre-ordering food: Lack of an easy way for customers to pre-order food means they often wait longer after sitting down.
 
-The Solution
+## The Solution
 DineSync solves these problems by providing a real-time interface for both restaurant staff and customers:
 
 Restaurant Management: The restaurant staff can easily update the restaurant’s details, menu, and table availability.
@@ -27,7 +28,7 @@ Table Availability: Customers can see available tables and book them instantly.
 
 Pre-ordering Food: Customers can pre-order their meals before arriving to avoid long wait times.
 
-Tech Stack
+## Tech Stack
 Frontend:
 
 React.js: For building the dynamic user interface.
@@ -42,7 +43,7 @@ GitHub: For version control.
 
 VSCode: For development.
 
-Future Enhancements
+## Future Enhancements
 Backend Integration: To store data persistently and handle more complex features like user authentication, payment gateway, etc.
 
 Admin Panel: For deeper restaurant management features, including analytics and detailed reports.
@@ -50,3 +51,4 @@ Admin Panel: For deeper restaurant management features, including analytics and 
 ## Demo Video
 Watch a quick demo of the DineSync app:
 
+https://github.com/Zanalsorathiya0804-rgb/DineSync/blob/main/20250429-0227-42.0555316.mp4
