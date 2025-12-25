@@ -53,3 +53,4 @@ Watch a quick demo of the DineSync app:
 
 https://github.com/Zanalsorathiya0804-rgb/DineSync/blob/main/20250429-0227-42.0555316.mp4
 
+
